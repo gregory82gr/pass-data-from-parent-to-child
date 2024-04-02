@@ -1,0 +1,6 @@
+<p>Second Component</p>
+<label for="second-message">Message: </label>
+  <input id="second-message" #secondMessage class="sel"/>
+<button (click)="send(secondMessage.value)" class="btn btn-primary">Second send message</button>
+<label  *ngIf="messageFirst" for="received-message-second">Message received from first component : {{messageFirst}} </label>
+
